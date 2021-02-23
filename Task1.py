@@ -34,7 +34,6 @@ def scrape_top_list():
         link=tr.find("td", class_="titleColumn").a['href']
         movie_link = "https://www.imdb.com/"+link
         movie_url.append(movie_link)
-    print(movie_name_list)
     top_movies=[]
     details={'position':'', 'name':'', 'year':'', 'rating':'', 'url':'' }
     for i in range(0, len(movie_position)):
@@ -47,7 +46,8 @@ def scrape_top_list():
         top_movies.append(details)
         details={'position':'', 'name':'', 'year':'', 'rating':'', 'url':'' }
     data2 = json.dumps(top_movies, indent=4)
-    with open("movie_data.json", "w") as data:
+    with open("topMovieList.json", "w") as data:
         data.write(data2)
     return top_movies
-scrape_top_list()
+d=scrape_top_list()
+# print(d)
