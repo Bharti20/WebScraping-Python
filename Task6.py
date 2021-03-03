@@ -17,18 +17,20 @@ def analyse_movies_language(movies_list):
             listOfLanguage.append(store[j])
             j=j+1
         i=i+1
-    print(listOfLanguage)
     index=0
     dic={}
     while index<len(listOfLanguage):
         z=0
         count=0
         while z<len(listOfLanguage):
-            if listOfLanguage[index]==listOfLanguage[j]:
+            if listOfLanguage[index]==listOfLanguage[z]:
                 count=count+1
             z=z+1
         if listOfLanguage[index] not in dic:
             dic[listOfLanguage[index]]=count
         index=index+1
-    print(dic)  
+    json_data=json.dumps(dic, indent=2)
+    with open ("language_data.json", "w") as data_of_language:
+        data_of_language.write(json_data)
+    return dic
 analyse_movies_language(movies_detail_list)
