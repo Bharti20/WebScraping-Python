@@ -1,0 +1,17 @@
+{
+  "name": "Anand",
+  "director": [
+    "Hrishikesh Mukherjee"
+  ],
+  "country": "India",
+  "language": [
+    "Hindi"
+  ],
+  "poster_image_url": "https://m.media-amazon.com/images/M/MV5BNTMzNGFlYmUtMTA0Ny00MzE1LTk1NjAtNjIxYzczZmQxNzk2XkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_UY268_CR8,0,182,268_AL__QL50.jpg",
+  "bio": "The story of a terminally ill man who wishes to live life to the fullest before the inevitable occurs, as told by his best friend.",
+  "runtime": 122,
+  "genre": [
+    "Drama",
+    "Musical"
+  ]
+}

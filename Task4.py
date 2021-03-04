@@ -5,9 +5,10 @@ import json
 from Task3 import *
 import os.path
 from os import path
+import random, time 
 top_movies = scrape_top_list()
 def scrape_movie_details(movie_url):
-    
+    random_sleep=random.randint(1,3)
     ########### Chaching part ##############
     movie_id=""
     for id in movie_url[27:]:
@@ -19,7 +20,8 @@ def scrape_movie_details(movie_url):
             data_convert=json.load(stored_all_data)
             return data_convert
     ############################################
-    else:   
+    else:
+        time.sleep(random_sleep)
         res=requests.get(movie_url)
         soup=BeautifulSoup(res.text, "html.parser")
         movieDetails=soup.find("div", class_="title_wrapper").h1.get_text()

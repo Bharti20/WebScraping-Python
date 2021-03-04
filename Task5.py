@@ -15,6 +15,6 @@ def get_movie_list_details(movie_list):
        scrapMoviesList10.append(scrap_data)
        i=i+1
     return scrapMoviesList10
-get_movie_list_details(top_movies[:10])
+get_movie_list_details(top_movies[:178])
 
     
