@@ -31,8 +31,8 @@ def group_by_year(movies):
     
         index=index+1
     # pprint.pprint(details)
-    allData=json.dumps(details, indent=2)
-    with open("groupByYear.json", "w") as dataByYear:
-        dataByYear.write(allData)
+    # allData=json.dumps(details, indent=2)
+    # with open("groupByYear.json", "w") as dataByYear:
+    #     dataByYear.write(allData)
     return details
 group_by_year(scrape_top_list())

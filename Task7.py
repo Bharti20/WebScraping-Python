@@ -27,8 +27,8 @@ def analyse_movies_directors(movie_list):
         if listOfLanguage[index] not in dic:
             dic[listOfLanguage[index]]=count
         index=index+1
-    json_data=json.dumps(dic, indent=2)
-    with open ("analyse_movies_directors.json", "w") as data_of_language:
-        data_of_language.write(json_data)
+    # json_data=json.dumps(dic, indent=2)
+    # with open ("analyse_movies_directors.json", "w") as data_of_language:
+    #     data_of_language.write(json_data)
     return dic
 analyse_movies_directors(movies_detail_list) 

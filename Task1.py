@@ -45,9 +45,9 @@ def scrape_top_list():
         details['url']=str(movie_url[i])
         top_movies.append(details)
         details={'position':'', 'name':'', 'year':'', 'rating':'', 'url':'' }
-    data2 = json.dumps(top_movies, indent=4)
-    with open("topMovieList.json", "w") as data:
-        data.write(data2)
+    # data2 = json.dumps(top_movies, indent=4)
+    # with open("topMovieList.json", "w") as data:
+    #     data.write(data2)
     return top_movies
 d=scrape_top_list()
-# print(d)
+

@@ -19,7 +19,7 @@ def group_by_decade(movies):
             if x<=decade10 and x>=index:
                 for j in movies_by_year[x]:
                     movieDic[index].append(j)
-    data=json.dumps(movieDic, indent=2)
-    with open("decadeData.json", "w") as convertToJson:
-        convertToJson.write(data)
+    # data=json.dumps(movieDic, indent=2)
+    # with open("decadeData.json", "w") as convertToJson:
+    #     convertToJson.write(data)
 group_by_decade(scrape_top_list())
